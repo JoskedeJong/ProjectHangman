@@ -51,10 +51,18 @@
         $(".submitEntry").click(function(){
             // console.log(blip);
             var input = $(".entry").val();
-            if (input == answer) {
-                alert("true");
+            var stringLength = input.length;
+            if (stringLength > 1) {
+                alert("only single-digit answers are allowed!");
             }
-            else alert("false");
+            else{
+                if (input == answer) {
+                alert("true");
+                }
+                else {
+                alert("false");
+                }
+            }
         });
 
     });
