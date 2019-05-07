@@ -30,27 +30,27 @@
     
         var answer = $(".answer").text();
         
-        $(".button1").click(function(){
-            // console.log(blip);
-            var input = "a";
-            if (input == answer) {
-                alert("true");
-            }
-            else alert("false");
-        });
+        // $(".button1").click(function(){
+        //     // console.log(blip);
+        //     var input = "a";
+        //     if (input == answer) {
+        //         alert("true");
+        //     }
+        //     else alert("false");
+        // });
 
-        $(".button2").click(function(){
-            // console.log(blip);
-            var input = "b";
-            if (input == answer) {
-                alert("true");
-            }
-            else alert("false");
-        });
+        // $(".button2").click(function(){
+        //     // console.log(blip);
+        //     var input = "b";
+        //     if (input == answer) {
+        //         alert("true");
+        //     }
+        //     else alert("false");
+        // });
 
-        $(".button2.submitEntry").click(function(){
+        $(".submitEntry").click(function(){
             // console.log(blip);
-            var input = "b";
+            var input = $(".entry").val();
             if (input == answer) {
                 alert("true");
             }
@@ -66,8 +66,8 @@
 <body>
     <div class="answer">a</div>
     <div class="result"></div>
-    <div class="button1">a</div>
-    <div class="button2">b</div>
+    <!-- <div class="button1">a</div>
+    <div class="button2">b</div> -->
     <div>
         <input class="entry" type="text" placeholder="letter" name="Guess a Letter" required></input>
         <input class="submitEntry" type="submit" value="Submit your Letter"></input> 
