@@ -29,38 +29,23 @@
     $(document).ready(function(event) {
     
         var answer = $(".answer").text();
-        
-        // $(".button1").click(function(){
-        //     // console.log(blip);
-        //     var input = "a";
-        //     if (input == answer) {
-        //         alert("true");
-        //     }
-        //     else alert("false");
-        // });
-
-        // $(".button2").click(function(){
-        //     // console.log(blip);
-        //     var input = "b";
-        //     if (input == answer) {
-        //         alert("true");
-        //     }
-        //     else alert("false");
-        // });
 
         $(".submitEntry").click(function(){
-            // console.log(blip);
+            var answer = $(".answer").text();
+            console.log(answer);
             var input = $(".entry").val();
             var stringLength = input.length;
+            var doesItInclude = answer.includes(input);
+            console.log(doesItInclude);
             if (stringLength > 1) {
                 alert("only single-digit answers are allowed!");
             }
             else{
-                if (input == answer) {
-                alert("true");
+                if (doesItInclude == true) {
+                    alert("true");
                 }
                 else {
-                alert("false");
+                    alert("false");
                 }
             }
         });
@@ -79,6 +64,7 @@
     <div>
         <input class="entry" type="text" placeholder="letter" name="Guess a Letter" required></input>
         <input class="submitEntry" type="submit" value="Submit your Letter"></input> 
+        <!-- could have used maxlenght="1"  -->
     </div>
 </body>
 

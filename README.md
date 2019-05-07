@@ -9,7 +9,8 @@ Goal: creat a very basic version of the word-game Hangman
 4. [x] (changed order) create script to compare single entry to single letter answer
 5. [x] create entry field instead of buttons
 6. [x] create entry field that only allows single letter
-7. [ ] create script that compares entry to every letter in answer-string \(output: true/false\), make answer multi-letter
+7. [x] create script that compares entry to every letter in answer-string \(output: true/false\)
+8. [ ] make answer multi-letter
 
 future goals:
 \- set turn limit
