@@ -16,17 +16,52 @@
     height: 20px;
 }
 
+[class^=button] {
+    background-color: lightcoral;
+    width: 100px;
+    height: 20px;
+}
+
 </style>
+
+<script>
+    
+    $(document).ready(function(event) {
+    
+        var answer = $(".answer").text();
+        
+        $(".button1").click(function(){
+            // console.log(blip);
+            var input = "a";
+            if (input == answer) {
+                alert("true");
+            }
+            else alert("false");
+        });
+
+        $(".button2").click(function(){
+            // console.log(blip);
+            var input = "b";
+            if (input == answer) {
+                alert("true");
+            }
+            else alert("false");
+        });
+    });
+
+</script>
 
 </head>
 
 <body>
-    <div class="answer">H</div>
+    <div class="answer">a</div>
     <div class="result"></div>
-    <div>
-        <input type="text" placeholder="letter" name="Guess a Letter" required>
-        <input type="submit" value="Submit your Letter" 
-    </div>
+    <div class="button1">a</div>
+    <div class="button2">b</div>
+    <!-- <div>
+        <input class="entry" type="text" placeholder="letter" name="Guess a Letter" required></input>
+        <input class="submit" type="submit" value="Submit your Letter"></input> 
+    </div> -->
 </body>
 
 
