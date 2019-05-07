@@ -8,6 +8,7 @@ Goal: creat a very basic version of the word-game Hangman
 \- deviated from sketch by limiting answer to two buttons
 4. [x] (changed order) create script to compare single entry to single letter answer
 5. [ ] create entry field instead of buttons
+\- already started partially on step 5 because of GitHub outage
 6. [ ] create entry field that only allows single letter
 
 future goals:

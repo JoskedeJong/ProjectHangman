@@ -47,6 +47,16 @@
             }
             else alert("false");
         });
+
+        $(".button2.submitEntry").click(function(){
+            // console.log(blip);
+            var input = "b";
+            if (input == answer) {
+                alert("true");
+            }
+            else alert("false");
+        });
+
     });
 
 </script>
@@ -58,10 +68,10 @@
     <div class="result"></div>
     <div class="button1">a</div>
     <div class="button2">b</div>
-    <!-- <div>
+    <div>
         <input class="entry" type="text" placeholder="letter" name="Guess a Letter" required></input>
-        <input class="submit" type="submit" value="Submit your Letter"></input> 
-    </div> -->
+        <input class="submitEntry" type="submit" value="Submit your Letter"></input> 
+    </div>
 </body>
 
 
