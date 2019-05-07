@@ -1,26 +1,54 @@
-<Html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Hangman</title>
+
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <style>
+
+.gridContainer{
+    /* width: 100%;
+    height: 100%;
+    justify-items: auto;
+    align-items: auto;
+    display: grid; */
+    grid-template-areas: 
+    'title title'
+    'answer reply'
+    'entry submit';
+}    
+
+.titleField{
+    grid-area: title;
+    background-color: blueviolet;
+}
 
 .answer{
     background-color: azure;
     width: 100px;
     height: 20px;
+    grid-area: answer;
+    grid-gap: 10px;
 }
 
 .result{
     background-color: rgb(155, 206, 206);
     width: 100px;
     height: 20px;
+    grid-area: reply; 
 }
 
-[class^=button] {
-    background-color: lightcoral;
-    width: 100px;
-    height: 20px;
+.entry{
+    grid-area: entry;
 }
+
+.entrySubmit{
+    grid-area: submit;
 
 </style>
 
@@ -57,16 +85,22 @@
 </head>
 
 <body>
-    <div class="answer">a</div>
-    <div class="result"></div>
-    <!-- <div class="button1">a</div>
-    <div class="button2">b</div> -->
-    <div>
-        <input class="entry" type="text" placeholder="letter" name="Guess a Letter" required></input>
-        <input class="submitEntry" type="submit" value="Submit your Letter"></input> 
-        <!-- could have used maxlenght="1"  -->
+    <div class="container gridContainer">
+        <div class="titleField"><h1>Hangman</h1></div>
+        <div class="answer">orb</div>
+        <div class="result"></div>
+        <div>
+            <input class="entry" type="text" placeholder="letter" name="Guess a Letter" required></input>
+            <input class="btn-primary submitEntry" type="submit" value="Submit your Letter"></input> 
+            <!-- note to self :could have used maxlenght="1"  -->
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 
 
-</Html>
+</html>

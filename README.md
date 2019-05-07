@@ -10,7 +10,8 @@ Goal: creat a very basic version of the word-game Hangman
 5. [x] create entry field instead of buttons
 6. [x] create entry field that only allows single letter
 7. [x] create script that compares entry to every letter in answer-string \(output: true/false\)
-8. [ ] make answer multi-letter
+8. [x] make answer multi-letter
+9. [x] makes first explorations into Bootsrap 4
 
 future goals:
 \- set turn limit
