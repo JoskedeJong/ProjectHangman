@@ -16,9 +16,5 @@ Goal: creat a very basic version of the word-game Hangman
 11. [x] create function that creates stars equal to the amount of letters in the answer
 12. [x] create function that alters stars to corretly guessed letters
 13. [x] create turn tracker + function that updates this tracker
-14. [ ] create an array of possible answers to draw from
-15. [ ] create a win\- and loss state
-
-future goals:
-\- make answer variable
-
+14. [x] create an array of possible answers to draw from
+15. [x] create a win\- and loss state
