@@ -1,0 +1,39 @@
+.gridContainer{
+    /* width: 100%;
+    height: 100%;
+    justify-items: auto;
+    align-items: auto;
+    display: grid; */
+    grid-gap: 10px;
+    grid-template-areas: 
+    'title title'
+    'answer result'
+    'entry submit';
+}    
+
+.titleField{
+    grid-area: title;
+    background-color: blueviolet;
+}
+
+.answer{
+    background-color: azure;
+    /* width: 100px;
+    height: 20px; */
+    grid-area: answer;
+}
+
+.result{
+    background-color: rgb(155, 206, 206);
+    /* width: 100px;
+    height: 20px; */
+    grid-area: result; 
+}
+
+.entry{
+    grid-area: entry;
+}
+
+.entrySubmit{
+    grid-area: submit;
+}

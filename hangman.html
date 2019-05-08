@@ -7,80 +7,9 @@
     <title>Project Hangman</title>
 
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="hangman.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<style>
-
-.gridContainer{
-    /* width: 100%;
-    height: 100%;
-    justify-items: auto;
-    align-items: auto;
-    display: grid; */
-    grid-template-areas: 
-    'title title'
-    'answer reply'
-    'entry submit';
-}    
-
-.titleField{
-    grid-area: title;
-    background-color: blueviolet;
-}
-
-.answer{
-    background-color: azure;
-    width: 100px;
-    height: 20px;
-    grid-area: answer;
-    grid-gap: 10px;
-}
-
-.result{
-    background-color: rgb(155, 206, 206);
-    width: 100px;
-    height: 20px;
-    grid-area: reply; 
-}
-
-.entry{
-    grid-area: entry;
-}
-
-.entrySubmit{
-    grid-area: submit;
-
-</style>
-
-<script>
-    
-    $(document).ready(function(event) {
-    
-        var answer = $(".answer").text();
-
-        $(".submitEntry").click(function(){
-            var answer = $(".answer").text();
-            console.log(answer);
-            var input = $(".entry").val();
-            var stringLength = input.length;
-            var doesItInclude = answer.includes(input);
-            console.log(doesItInclude);
-            if (stringLength > 1) {
-                alert("only single-digit answers are allowed!");
-            }
-            else{
-                if (doesItInclude == true) {
-                    alert("true");
-                }
-                else {
-                    alert("false");
-                }
-            }
-        });
-
-    });
-
-</script>
+    <link rel="stylesheet" href="hangman.css">
 
 </head>
 
@@ -88,11 +17,10 @@
     <div class="container gridContainer">
         <div class="titleField"><h1>Hangman</h1></div>
         <div class="answer">orb</div>
-        <div class="result"></div>
+        <div class="result">*******</div>
         <div>
-            <input class="entry" type="text" placeholder="letter" name="Guess a Letter" required></input>
+            <input class="entry" type="text" placeholder="letter" name="Guess a Letter" maxlength="1" minlength="1" required></input>
             <input class="btn-primary submitEntry" type="submit" value="Submit your Letter"></input> 
-            <!-- note to self :could have used maxlenght="1"  -->
         </div>
     </div>
 
@@ -101,6 +29,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
-
 
 </html>
