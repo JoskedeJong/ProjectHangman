@@ -4,11 +4,11 @@
 $(document).ready(function(event) {
     var answer = $(".answer").text();               /*converts word in div to variable*/
     var answerLength = answer.length;
+    var countdown = 10;
 
 
     for (n=0; n < answerLength; n++ ) {
         document.getElementsByClassName("result")[0].innerHTML += "*";
-        // why not selectElementByClassName?
     }
     
     $(".submitEntry").click(function(){ 
@@ -16,7 +16,6 @@ $(document).ready(function(event) {
         var doesItInclude = answer.includes(input);
         if (doesItInclude == 1) {
             alert("true");
-
             for (i=0; i<answerLength; i++){
                 if (answer[i] == input){
                     var letterString = document.querySelector(".result").innerHTML;
@@ -26,9 +25,12 @@ $(document).ready(function(event) {
         }
         else {
             alert("false");
-
-            // here I want code to update turn tracking
+            countdown = countdown - 1;
+            var newCountdown= "Attempts Remaining\: " + countdown;
+            document.getElementsByClassName("lives")[0].innerHTML = newCountdown; 
         }
+        var empty = "";
+        document.getElementsByClassName("entry")[0].value = "";
         
     });
 

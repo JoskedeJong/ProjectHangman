@@ -15,9 +15,10 @@ Goal: creat a very basic version of the word-game Hangman
 10. [x] split files into seperate html, css and JS files
 11. [x] create function that creates stars equal to the amount of letters in the answer
 12. [x] create function that alters stars to corretly guessed letters
-13. [ ] create turn tracker + function that updates this tracker
+13. [x] create turn tracker + function that updates this tracker
+14. [ ] create an array of possible answers to draw from
+15. [ ] create a win\- and loss state
 
 future goals:
-\- set turn limit
 \- make answer variable
-\- make answer multi-letter
+
