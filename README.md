@@ -13,7 +13,7 @@ Goal: creat a very basic version of the word-game Hangman
 8. [x] make answer multi-letter
 9. [x] made first explorations into Bootsrap 4
 10. [x] split files into seperate html, css and JS files
-11. [ ] create function that creates stars equal to the amount of letters in the answer
+11. [x] create function that creates stars equal to the amount of letters in the answer
 12. [ ] create function that alters stars to corretly guessed letters
 
 future goals:
